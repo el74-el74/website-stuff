@@ -1,0 +1,67 @@
+<!--this declares that its a html document-->
+<!DOCTYPE html>
+
+<!--this is the root of the html page-->
+<!--the lang attribute declares the language of the webpage-->
+<html lang="en">
+    <!--contains meta information (context and details)-->
+    <head>
+        <!--this is the title which is shown in the browsers title bar-->
+        <title>Page Title</title>
+    </head>
+    <!--the body contains all visible content like headings, paragraphs, images etc.-->
+    <body>
+
+        <!--headings-->
+        <!--the number after the h indicates how important the heading is-->
+        <!--tips for headings:
+            only use one h1 heading per page
+            use h1 for page title
+            h2 for section titles
+            h3 for sub-sections-->
+        <!--you can also change heading stuff with the style attribute-->
+        <h1>My First Heading</h1>
+        
+
+        <!--paragraph-->
+        <p>My first paragraph</p>
+        <!--for a line break you can use <br>-->
+        <p>This paragraph has a <br> line break</p>
+        <!--you can also change colour, font, size ect. using "style"-->
+        <p style="color:red;">this is red</p>
+        <!--you can also add some extra info with the title attribute-->
+        <p title="im a toolip">This is another line of text (hover your mouse over me and see what happens)</p>
+        <!--you can seperate content with <hr>-->
+        <p>text blablablabla</p>
+        <hr>
+        <h2>this is a subheading after a break</h2>
+        <p>some more text after a break</p>
+        <!--browsers automatically remove "unneccessary" lines or spaces
+        but if you want to not have this you can use <pre> which preserves both
+        spaces and line breaks-->
+        <pre>
+This poem is very poetic
+
+poems have words
+
+and weird spaces in them
+
+because they are poems
+        </pre>
+
+        <!--links-->
+        <a href="https://www.w3schools.com">This is a link</a>
+
+        <!--pictures-->
+        <!--there are 2 ways of having images in your website
+            1. Absolute URL - link to an image hosted on another website
+            2. Relative URL - link to an image hosted within the website
+            always best to use relative URLs-->
+        <!--the "alt" attribute displays text for if the image cant be displayed
+        or there is a screen reader used-->
+        <img src="w3schools.jpg" alt="W3Schools.com"
+        width="104" height="142">
+
+
+    </body>
+</html>
