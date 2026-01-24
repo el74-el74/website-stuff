@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
 
         <style>
+
+            /* ==== background ==== */
             body {
                 background-image: url("./background2.jpg");
                 background-size: 500px;
@@ -18,31 +20,32 @@
                 min-height: 100vh;
             }
 
+            /* ==== main text allignment ==== */
+            .main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 60px;
+                gap: 15px;
+            }
 
+            /* ===== title ==== */
             h1 {
                 height: 50px;
                 line-height: 50px;
                 max-width:500px;
-                text-align: center;
-                vertical-align: center; 
-                margin: 0 auto;
 
                 color:maroon;
                 font-family: 'Crafty Girls', cursive;
                 border:solid maroon;
                 border-radius: 10px;
                 background-color:rgb(236, 214, 214);
-                justify-content: center;
-                align-items: center;
-                position: center;
             }
 
+            /* ==== intro text ==== */
             p {
                 max-width: 500px;
                 text-align: left;
-                margin-top: 10px;
-                margin-left: 0 auto;
-                margin-right: 0 auto;
 
                 color:maroon;
                 border:dashed maroon 2px;
@@ -54,8 +57,10 @@
     </head>
 
     <body>
-        <h1>♡ welcome to my webpage ♡</h1>
-        <p>Welcome to my page all about me! This is a collection of a bunch of different pages about my different interests! Have a look around and learn lots of stuff about my various obsessions over time :)</p>
+        <div class ="main">
+            <h1>♡ welcome to my webpage ♡</h1>
+            <p>Welcome to my page all about me! This is a collection of a bunch of different pages about my different interests! Have a look around and learn lots of stuff about my various obsessions over time :)</p>
+        </div>
     </body>
-
+    
 </html>
