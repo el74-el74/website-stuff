@@ -77,19 +77,16 @@
         </div>
 
         <script>
-            document.getElementByID("clock")
-            clock.textContent = "12:00:00";
-
 
             function updateClock() {
                 const now = new Date();
                 const time = now.toLocaleTimeString();
 
                 const clock = document.getElementById("clock");
-                clock.textCOntent = time;
+                clock.textContent = time;
             }
 
-            updateCLock();
+            updateClock();
             setInterval(updateCLock, 1000);
         </script>
     </body>
