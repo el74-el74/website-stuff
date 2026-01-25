@@ -4,10 +4,19 @@
     <head>
         <title>About Me</title>
 
+        <!-- ==== fonts ==== -->
+
+        <!-- Crafty Girl -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
 
+         <!-- Patrick Hand -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        
+        
         <style>
 
             /* ==== background ==== */
@@ -29,22 +38,20 @@
                 gap: 10px;
             }
 
-            .left{
-                
-            }
 
             /* ===== title ==== */
             h1 {
-                height: 50px;
-                line-height: 50px;
                 max-width:500px;
                 margin: 0;
+                padding: 7px;
 
-                color:maroon;
+                color: rgb(107, 44, 44);
                 font-family: 'Crafty Girls', cursive;
-                border:solid maroon;
+
+                border:solid rgb(107, 44, 44);
                 border-radius: 10px;
-                background-color:rgb(236, 214, 214);
+                background-color:rgb(245, 228, 228);
+                box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
             }
 
             /* ==== intro text ==== */
@@ -52,24 +59,57 @@
                 max-width: 500px;
                 text-align: left;
                 margin: 0;
+                padding: 5px;
 
-                color:maroon;
-                border:dashed maroon 2px;
+                font-family: 'Patrick Hand', cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 15px;
+                color: rgb(107, 44, 44);
+                
+                border:dashed rgb(107, 44, 44);
                 border-radius: 5px;
-                background-color:rgb(236, 214, 214);
+                background-color:rgb(245, 228, 228);
+
+                box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
             }
 
+            /* ==== time box ====*/
+            #time-box {
+                font-family: 'Patrick Hand', cursive;
+                font-weight: 400;
+                font-style: normal;
+                color: rgb(107, 44, 44);
+                text-align: center;
+                
+                background-color: rgb(245, 228, 228);
+                
+                border: 2px solid rgb(107, 44, 44);
+                border-radius: 999px;
+                padding: 12px 24px;
+
+                
+                box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+                
+            }
+
+            /* ==== clock ==== */
             #clock {
-                font-family: 'Crafty Girls', cursive;
+                color: rgb(107, 44, 44);
+                letter-spacing: 1px;
                 font-size: 24px;
-                width: 75px;
-
-                color: maroon;
-                background-color: rgb(236, 214, 214);
-                border: solid maroon;
-                border-radius: 3px;
-                padding: 10px 20px;
             }
+
+            /* ==== date ==== */
+            #date {
+                font-size: 14px;
+                color: rgb(107, 44, 44);
+                margin-top: 4px;
+                opacity: 0.85;
+
+            }
+
+
 
         </style>
     </head>
@@ -79,21 +119,53 @@
             <h1> ♡ welcome to my webpage ♡ </h1>
             <p>Welcome to my page all about me! This is a collection of a bunch of different pages about my different interests! Have a look around and learn lots of stuff about my various obsessions over time :)</p>
             
-            <div id="clock">00:00:00</div>
+            <div id="time-box">
+                <div id="clock">00:00</div>
+                <div id="date"></div>
+            </div>
         </div>
+    
 
         <script>
-
+            
+            /* ==== clock ==== */
             function updateClock() {
-                const now = new Date();
-                const time = now.toLocaleTimeString();
-
-                const clock = document.getElementById("clock");
-                clock.textContent = time;
+                const now = new Date();  
+                const time = now.toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                
+                document.getElementById("clock").textContent = time;
             }
 
-            updateClock();
-            setInterval(updateClock, 1000);
+            updateClock(); // instant display of clock
+
+            const now = new Date();
+            const delay = 60000 - (now.getSeconds() * 1000);  // getting seconds then converting to milliseconds, then calculating how long to wait before updating
+
+
+            setTimeout(() => {  // runs once after a delay, "=>" tells code to run later
+            updateClock(); 
+                setInterval(updateClock, 60000); // updates every minute
+            }, delay);
+
+            /* ==== date ==== */
+            function updateDate() {
+                const day = new Date(); // gives current date and time
+                const date = day.toLocaleDateString([], {  // formats date nicely
+                    weekday: 'short', // short day e.g. Mon
+                    month: 'short', // short month e.g. Sep
+                    day: 'numeric' // numeric date e.g. 14
+                }).toLowerCase();
+                
+            document.getElementById("date").textContent = date;
+            
+            }
+            updateDate();
+            setInterval(updateDate, 86400000);
+            
+
         </script>
     </body>
     
