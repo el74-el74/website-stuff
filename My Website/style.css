@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+* {
+    box-sizing: border-box;  /* makes borders not go over screen size - removes horizontal scroll bar */
+}
+
 /* ==== grid layout ==== */
 .grid{
     display: grid;  /* grid layout */
@@ -21,18 +25,25 @@ body {
 /* ==== main text alignment ==== */
 .section-grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;  /* how much space each column takes up */
-    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;  /* how much space each column takes up */
+    align-items: start;
     text-align: center;
     margin-top: 20px;
     gap: 10px;
+    justify-items: center;
 }
 
+/* ==== CENTER COLUMN ==== */
+
+.center{
+    width: 100%;
+}
 
 /* ===== title ==== */
 .center h1 {
-    max-width:500px;
+    max-width:90%;
     margin: 0;
+    margin-bottom: 15px;
     padding: 7px;
 
     color: rgb(107, 44, 44);
@@ -46,7 +57,7 @@ body {
 
 /* ==== intro text ==== */
 .center p {
-    max-width: 500px;
+    max-width: 90%;
     text-align: left;
     margin: 0;
     padding: 5px;
@@ -62,6 +73,35 @@ body {
     background-color:rgb(245, 228, 228);
 
     box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+
+ /* ==== RIGHT COLUMN ==== */
+
+.right{
+    width: 100%;
+}
+
+/* ==== navigation box ==== */
+.right h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    justify-items: center;
+    align-items: top;
+
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(107, 44, 44);
+
+    background-color: rgb(245, 228, 228);
+
+    border: 7px solid rgb(107, 44, 44);
+    border-style: double;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px rgba(107, 44, 44, 0.3);
 }
 
 
