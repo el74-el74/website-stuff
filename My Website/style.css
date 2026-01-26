@@ -55,8 +55,21 @@ body {
     box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
 }
 
+.center .divider::before {
+    content:"--------⋆.˚✮🎧✮˚.⋆--------";
+    display: grid;
+    text-align: center;
+    margin: 10px;
+    
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(107, 44, 44);
+}
+
 /* ==== intro text ==== */
-.center p {
+.center .intro {
     max-width: 90%;
     text-align: left;
     margin: 0;
@@ -76,6 +89,7 @@ body {
 }
 
 
+
  /* ==== RIGHT COLUMN ==== */
 
 .right{
@@ -83,12 +97,15 @@ body {
 }
 
 /* ==== navigation box ==== */
-.right nav-box {
+.right .nav-box {
+    display: grid;
     width: 100%;
     margin: 0 auto;
-    padding: 5px;
-    justify-items: center;
-    align-items: top;
+    padding-top: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: start;
 
     background-color: rgb(245, 228, 228);
 
@@ -100,6 +117,8 @@ body {
 
 /* ==== nav title ==== */
 .right h2 {
+    display: grid;
+    justify-items: center;
     font-family: 'Patrick Hand', cursive;
     font-weight: 400;
     font-style: normal;
@@ -109,10 +128,12 @@ body {
 
 /* ==== links ==== */
 .right a {
+    display: grid;
+    justify-items: start;
     font-family: 'Patrick Hand', cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(107, 44, 44);
 }
 
