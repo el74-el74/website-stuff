@@ -83,18 +83,12 @@ body {
 }
 
 /* ==== navigation box ==== */
-.right h2 {
+.right nav-box {
     width: 100%;
     margin: 0 auto;
     padding: 5px;
     justify-items: center;
     align-items: top;
-
-    font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    color: rgb(107, 44, 44);
 
     background-color: rgb(245, 228, 228);
 
@@ -102,6 +96,24 @@ body {
     border-style: double;
     border-radius: 3px;
     box-shadow: 2px 2px 0px rgba(107, 44, 44, 0.3);
+}
+
+/* ==== nav title ==== */
+.right h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(107, 44, 44);
+}
+
+/* ==== links ==== */
+.right a {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(107, 44, 44);
 }
 
 
