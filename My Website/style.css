@@ -3,7 +3,7 @@
 
 /* ==== background ==== */
 body {
-    background-image: url("./background2.jpg");
+    background-image: url("./images/background2.jpg");
     background-size: 500px;
     background-repeat: repeat-x;
     background-position: center;
@@ -33,110 +33,12 @@ body {
     justify-items: center;
 }
 
-/* ==== CENTER COLUMN ==== */
+/* ==== LEFT COLUMN ==== */ 
 
-.center{
-    width: 100%;
-}
-
-/* ===== title ==== */
-.center h1 {
-    max-width:90%;
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 7px;
-
-    color: rgb(107, 44, 44);
-    font-family: 'Crafty Girls', cursive;
-
-    border:solid rgb(107, 44, 44);
-    border-radius: 10px;
-    background-color:rgb(245, 228, 228);
-    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
-}
-
-.center .divider::before {
-    content:"--------⋆.˚✮🎧✮˚.⋆--------";
+.left {
     display: grid;
-    text-align: center;
-    margin: 10px;
-    
-    font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(107, 44, 44);
+    max-width: 100%;
 }
-
-/* ==== intro text ==== */
-.center .intro {
-    max-width: 90%;
-    text-align: left;
-    margin: 0;
-    padding: 5px;
-
-    font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    color: rgb(107, 44, 44);
-    
-    border:dashed rgb(107, 44, 44);
-    border-radius: 5px;
-    background-color:rgb(245, 228, 228);
-
-    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
-}
-
-
-
- /* ==== RIGHT COLUMN ==== */
-
-.right{
-    width: 100%;
-}
-
-/* ==== navigation box ==== */
-.right .nav-box {
-    display: grid;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    align-items: start;
-
-    background-color: rgb(245, 228, 228);
-
-    border: 7px solid rgb(107, 44, 44);
-    border-style: double;
-    border-radius: 3px;
-    box-shadow: 2px 2px 0px rgba(107, 44, 44, 0.3);
-}
-
-/* ==== nav title ==== */
-.right h2 {
-    display: grid;
-    justify-items: center;
-    font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    color: rgb(107, 44, 44);
-}
-
-/* ==== links ==== */
-.right a {
-    display: grid;
-    justify-items: start;
-    font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(107, 44, 44);
-}
-
 
 /* ==== time box ====*/
 #time-box {
@@ -172,3 +74,152 @@ body {
     opacity: 0.85;
 
 }
+
+.left .lofi-girl{
+    max-width: 90%;
+    margin: 10px;
+
+    border: solid 2px rgb(107, 44, 44);
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+.left .about-me{
+    max-width: 80%;
+    margin: 10px;
+    
+    border:solid 7px rgb(107, 44, 44);
+    border-style: double;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(107, 44, 44);
+    text-align: center;
+
+    background-color:rgb(245, 228, 228);
+}
+
+/* ==== CENTER COLUMN ==== */
+
+.center{
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+
+/* ===== title ==== */
+.center .title {
+    max-width:90%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 7px;
+    text-align: center;
+    align-items: center;
+
+
+    color: rgb(107, 44, 44);
+    font-family: 'Crafty Girls', cursive;
+
+    border:solid rgb(107, 44, 44);
+    border-radius: 10px;
+    background-color:rgb(245, 228, 228);
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+.center .divider::before {
+    content:"--------⋆.˚✮🎧✮˚.⋆--------";
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(107, 44, 44);
+}
+
+/* ==== intro text ==== */
+.center .intro {
+
+    max-width: 90%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(107, 44, 44);
+    
+    border:dashed rgb(107, 44, 44);
+    border-radius: 5px;
+    background-color:rgb(245, 228, 228);
+
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+.center .lofi-cat{
+    max-width: 90%;
+    margin: 10px;
+
+    border: solid 2px rgb(107, 44, 44);
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+
+ /* ==== RIGHT COLUMN ==== */
+
+.right{
+    width: 100%;
+}
+
+/* ==== navigation box ==== */
+.right .nav-box {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: start;
+
+    background-color: rgb(245, 228, 228);
+
+    border: 7px solid rgb(107, 44, 44);
+    border-style: double;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px rgba(107, 44, 44, 0.3);
+}
+
+/* ==== nav title ==== */
+.right .title-navigation {
+    display: grid;
+    justify-items: center;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(107, 44, 44);
+}
+
+/* ==== links ==== */
+.right a {
+    display: grid;
+    justify-items: start;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(107, 44, 44);
+}
+
+
+
