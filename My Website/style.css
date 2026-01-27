@@ -50,6 +50,8 @@ body {
     
     background-color: rgb(245, 228, 228);
     
+    margin: 0 auto;
+    width: 90%;
     border: 7px solid rgb(107, 44, 44);
     border-style: double;
     border-radius: 3px;
@@ -77,7 +79,7 @@ body {
 
 .left .lofi-girl{
     max-width: 90%;
-    margin: 10px;
+    margin: 10px auto;
 
     border: solid 2px rgb(107, 44, 44);
     border-radius: 5px;
@@ -85,8 +87,8 @@ body {
 }
 
 .left .about-me{
-    max-width: 80%;
-    margin: 10px;
+    width: 90%;
+    margin: 10px auto;
     
     border:solid 7px rgb(107, 44, 44);
     border-style: double;
@@ -113,12 +115,10 @@ body {
 /* ===== title ==== */
 .center .title {
     max-width:90%;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 15px;
     padding: 7px;
     text-align: center;
-    align-items: center;
-
 
     color: rgb(107, 44, 44);
     font-family: 'Crafty Girls', cursive;
@@ -131,10 +131,9 @@ body {
 
 .center .divider::before {
     content:"--------⋆.˚✮🎧✮˚.⋆--------";
-    display: grid;
     text-align: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px auto;
     
     font-family: 'Patrick Hand', cursive;
     font-weight: 400;
@@ -145,10 +144,10 @@ body {
 
 /* ==== intro text ==== */
 .center .intro {
-
+    display: grid;
     max-width: 90%;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 5px;
 
     font-family: 'Patrick Hand', cursive;
@@ -166,7 +165,7 @@ body {
 
 .center .lofi-cat{
     max-width: 90%;
-    margin: 10px;
+    margin: 10px auto;
 
     border: solid 2px rgb(107, 44, 44);
     border-radius: 5px;
@@ -178,11 +177,11 @@ body {
 
 .right{
     width: 100%;
+    display: grid;
 }
 
 /* ==== navigation box ==== */
 .right .nav-box {
-    display: grid;
     width: 100%;
     margin: 0 auto;
     padding-top: 0 auto;
@@ -201,7 +200,6 @@ body {
 
 /* ==== nav title ==== */
 .right .title-navigation {
-    display: grid;
     justify-items: center;
     font-family: 'Patrick Hand', cursive;
     font-weight: 500;
@@ -212,7 +210,6 @@ body {
 
 /* ==== links ==== */
 .right a {
-    display: grid;
     justify-items: start;
     font-family: 'Patrick Hand', cursive;
     font-weight: 400;
