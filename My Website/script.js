@@ -1,5 +1,7 @@
 /* ==== Javascript ==== */
 
+const path = require('path');
+
 
 /* ==== clock ==== */
 function updateClock() {
@@ -37,3 +39,12 @@ document.getElementById("date").textContent = date;
 }
 updateDate();
 setInterval(updateDate, 86400000);
+
+
+/* ==== latest page added ==== */
+function getNewPage() {
+    var fs = require('fs');
+    path.basename('/My Website/finished pages/finishedpage.html', '.html');
+}
+
+getNewPage();

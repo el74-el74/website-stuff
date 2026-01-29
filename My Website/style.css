@@ -176,21 +176,21 @@ body {
   RIGHT COLUMN 
    ========== */
 
-/* ==== general ==== */
+/* ==== GENERAL ==== */
 .right{
     width: 100%;
     display: grid;
+    justify-items: center;
 }
 
-/* ==== navigation box ==== */
+/* ==== NAVIGATION BOX ==== */
 .right .nav-box {
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 10px;
 
     padding-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px
 }
 
 /* ==== nav title ==== */
@@ -207,6 +207,21 @@ body {
     padding-left: 25px;
     margin: 0;
     text-align: start;
+}
+
+/* ==== NEWS BOX ==== */
+.right .news-box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.right .news-box .title-news {
+    text-align: center; 
+}
+
+.right .news-box .text-news {
+    text-align: start;
+    padding-left: 25px
 }
 
 
