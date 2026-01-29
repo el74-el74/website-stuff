@@ -184,9 +184,8 @@ body {
 
 /* ==== navigation box ==== */
 .right .nav-box {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
-    margin-right: 10px;
 
     padding-top: 0;
     padding-left: 10px;
