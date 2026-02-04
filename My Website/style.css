@@ -22,9 +22,9 @@ body {
 }
 
 
-/* ==========
+/* ========
     LAYOUT
-   ========== */
+   ======== */
 
 .grid{
     display: grid;  /* grid layout */
@@ -44,9 +44,9 @@ body {
 
 
 
-/* ==========
- MAIN BOX STYLE
-   ========== */
+/* ===========
+   MAIN STYLES
+   =========== */
 
 .box {
     background-color:rgb(245, 228, 228);
@@ -64,9 +64,9 @@ body {
 
 
 
-/* ==========
+/* ===========
    LEFT COLUMN
-   ========== */ 
+   =========== */ 
 
 /* ==== general ==== */
 .left {
@@ -101,9 +101,9 @@ body {
     max-width: 90%;
     margin: 10px auto;
 
-    border:rgb(107, 44, 44);
+    border: solid 2px rgb(107, 44, 44);
     border-radius: 5px;
-    
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
 }
 
 /* ==== about me box ==== */
@@ -114,9 +114,9 @@ body {
 }
 
 
-/* ==========
+/*=============
   CENTER COLUMN 
-   ========== */
+  ============= */
 
 /* ==== general ====*/
 .center{
@@ -176,9 +176,9 @@ body {
 }
 
 
-/* ==========
-  RIGHT COLUMN 
-   ========== */
+/* ============
+   RIGHT COLUMN 
+   ============ */
 
 /* ==== GENERAL ==== */
 .right{
