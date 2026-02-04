@@ -97,9 +97,13 @@ body {
 }
 
 /* ==== lofi-girl photo ==== */
-.left .lofi-girl{
+.left .strawberry{
     max-width: 90%;
     margin: 10px auto;
+
+    border:rgb(107, 44, 44);
+    border-radius: 5px;
+    
 }
 
 /* ==== about me box ==== */
