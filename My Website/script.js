@@ -40,7 +40,10 @@ setInterval(updateDate, 86400000);
 /* ==== latest page added ==== */
 function getNewPage() {
     var fs = require('fs');
-    path.basename('/My Website/finished pages/finishedpage.html', '.html');
+    path.basename('/My Website/finished pages', '.html');
+
+document.getElementById("newest-webpage").textContent = newest-webpage
+
 }
 
 getNewPage();
