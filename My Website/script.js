@@ -47,3 +47,36 @@ document.getElementById("newest-webpage").textContent = newest-webpage
 }
 
 getNewPage();
+
+/* ==== update age ==== */
+
+/*function updateAge() {
+    const now = new Date();
+    const day = day.toLocaleDateString([], {
+        age: 'short'
+    }) 
+
+    document.getElementById("age").textContext = date;
+
+}
+
+updateAge();
+
+const yearms = 31536000000
+const bday = 
+
+const noww = new Date()
+const delayy = yearms - (noww.getMilliseconds());
+
+setTimeout => {
+updateAge();
+    setInterval(updateAge, yearms);
+
+} */
+
+function updateAge() {
+    const noww = new Date();
+    const age = noww.GetFullDate("December 10, 2009 00:00:00");
+}
+
+updateAge();
