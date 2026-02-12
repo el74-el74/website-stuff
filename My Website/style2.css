@@ -1,0 +1,125 @@
+/* ==== CSS ==== */
+
+* {
+    box-sizing: border-box;  /* makes borders not go over screen size - removes horizontal scroll bar */
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    /* ==== background ==== */
+    background-color: rgb(181, 144, 144);
+    background-size: 500px;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/* ======
+   LAYOUT
+   ====== */
+.grid{
+    display: grid;  /* grid layout */
+    gap: 20px;  /* space between each column and row */
+    align-items:center;  /* vertically center content */
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;  /* how much space each column takes up */
+    align-items: start;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+    justify-items: center;
+}
+
+/* =======
+   GLOBALS
+   ======= */
+
+.box {
+    background-color:rgb(235, 222, 219);
+    border: 7px double rgba(117, 33, 38);
+    border-radius: 6px;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+.patrickhand-text {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(117, 33, 38);
+}
+
+.marvel-font {
+    font-family: 'MARVEL font', bold;
+}
+
+
+/* ================
+   COLOUR RBG CODES
+   ================ */
+/* 
+
+text: rgba(117, 33, 38);
+borders: rgba(117, 33, 38);
+backgrounds: rgb(235, 222, 219);
+shadows: rgba(107, 44, 44, 0.3);
+
+/* ======
+   HEADER
+   ====== */
+
+.header{
+    margin: 0 auto;
+    height: 30vh;
+    border: 3px solid rgba(117, 33, 38);
+    
+    text-align: center;
+    background-image: url("./images/marvel-banner.jpg");
+}
+
+.header .title{
+    max-width: 90%;
+    margin: 10px auto;
+
+    border: solid 2px rgba(117, 33, 38);
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+}
+
+
+
+/* ============
+   RIGHT COLUMN
+   ============ */
+
+.right{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+
+.right .nav-box {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.right .nav-box li {
+    list-style-type: "✭";
+}
+
+.right .nav-box ul {
+    padding-left: 25px;
+    margin: 0;
+    text-align: start;
+
+    color: rgba(117, 33, 38)
+
+;
+}
