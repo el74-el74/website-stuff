@@ -20,6 +20,7 @@ body {
 /* ======
    LAYOUT
    ====== */
+
 .grid{
     display: grid;  /* grid layout */
     gap: 20px;  /* space between each column and row */
@@ -72,7 +73,6 @@ shadows: rgba(107, 44, 44, 0.3);
 /* ======
    HEADER
    ====== */
-
 .header{
     margin: 0 auto;
     height: 30vh;
