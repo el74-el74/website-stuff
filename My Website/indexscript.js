@@ -37,46 +37,23 @@ document.getElementById("date").textContent = date;
 updateDate();
 setInterval(updateDate, 86400000);
 
-/* ==== latest page added ==== */
-function getNewPage() {
-    var fs = require('fs');
-    path.basename('/My Website/finished pages', '.html');
-
-document.getElementById("newest-webpage").textContent = newest-webpage
-
-}
-
-getNewPage();
 
 /* ==== update age ==== */
-
-/*function updateAge() {
-    const now = new Date();
-    const day = day.toLocaleDateString([], {
-        age: 'short'
-    }) 
-
-    document.getElementById("age").textContext = date;
-
-}
-
-updateAge();
-
-const yearms = 31536000000
-const bday = 
-
-const noww = new Date()
-const delayy = yearms - (noww.getMilliseconds());
-
-setTimeout => {
-updateAge();
-    setInterval(updateAge, yearms);
-
-} */
-
 function updateAge() {
     const noww = new Date();
-    const age = noww.GetFullDate("December 10, 2009 00:00:00");
+    const birthdate = new Date(2009, 11, 10);
+
+    let age = noww.getFullYear() - birthdate.getFullYear();
+    console.log(age);
+    if (
+        noww.getMonth() < birthdate.getMonth() ||  // || means or
+        (noww.getMonth() === birthdate.getMonth() &&  // === means equal in value and type && means and
+         noww.getDate() < birthdate.getDate())
+    ) {
+        age--;  // -- shorthand for -1
+    }
+
+    document.getElementById("updateAge").textContent = age;
 }
 
 updateAge();

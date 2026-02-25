@@ -14,7 +14,7 @@ body {
     margin: 0;
 
     /* ==== background ==== */
-    background-image: url("./images/background2.jpg");
+    background-image: url("./indeximages/background2.jpg");
     background-size: 500px;
     background-repeat: repeat-x;
     background-position: center;
@@ -62,7 +62,15 @@ body {
     color: rgb(107, 44, 44);
 }
 
+/* ======
+   HEADER
+   ====== */
+.header {
+    margin: 0 auto;
+    height: 30vh;
 
+    background-image: url("./indeximages/banner.jpg")
+}
 
 /* ===========
    LEFT COLUMN
@@ -98,8 +106,9 @@ body {
 
 /* ==== lofi-girl photo ==== */
 .left .strawberry{
-    max-width: 90%;
+    max-width: 50%;
     margin: 10px auto;
+    transform: rotate(270deg);
 
     border: solid 2px rgb(107, 44, 44);
     border-radius: 5px;
@@ -130,7 +139,7 @@ body {
     max-width:90%;
     margin: 0 auto;
     margin-bottom: 15px;
-    padding: 7px;
+    padding-bottom: 7px;
     text-align: center;
 
     color: rgb(107, 44, 44);
@@ -204,7 +213,7 @@ body {
 
 /* ==== links ==== */
 .right .nav-box li {
-    list-style-type: "♡";
+    list-style-type: "♡ ";
 }
 
 .right .nav-box ul {
@@ -217,6 +226,7 @@ body {
 .right .news-box {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .right .news-box .title-news {
@@ -224,12 +234,14 @@ body {
 }
 
 .right .news-box .text-news {
-    text-align: center;
+    text-align: start;
+    padding-left: 25px
 }
 
 .right .news-box #newest-webpage {
     text-align: start;
 }
+
 
 
 
