@@ -68,6 +68,7 @@ body {
 .header {
     margin: 0 auto;
     width: 100vw;
+    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
 
     background-image: url("./indeximages/banner.jpg")
 }
