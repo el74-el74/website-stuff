@@ -224,8 +224,7 @@ body {
 }
 
 .right .news-box .text-news {
-    text-align: start;
-    padding-left: 25px
+    text-align: center;
 }
 
 .right .news-box #newest-webpage {
