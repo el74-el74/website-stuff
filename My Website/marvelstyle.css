@@ -82,9 +82,11 @@ shadows: rgba(107, 44, 44, 0.3);
     background-image: url("./images/marvel-banner.jpg");
 }
 
-.header .title{
-    max-width: 90%;
+.title{
+    width: 30%;
     margin: 10px auto;
+    text-align: ceter;
+    display: inline-block;
 
     border: solid 2px rgba(117, 33, 38);
     border-radius: 5px;
