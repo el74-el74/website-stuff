@@ -67,11 +67,79 @@ body {
    ====== */
 .header {
     margin: 0 auto;
-    width: 100vw;
+    max-width: 100%;
     box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
 
-    background-image: url("./indeximages/banner.jpg")
+    display: grid;
+    position: relative;
 }
+
+.banner {    
+    text-align: center;
+    background-image: url("./images/marvel-banner.jpg");
+    max-width: 100%;
+
+    position: absolute;
+}
+
+.title {
+    max-width:90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+    text-align: center;
+
+    color: rgb(244, 212, 207);
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px rgba(107, 44, 44, 0.3);
+
+    position: absolute;
+
+    width: 50%;
+    margin: 10px auto;
+    top: 5%;
+    left: 50%;
+    margin-left: -25%;
+}
+
+/* ==== time box ====*/
+#time-box {
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 5px 24px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+
+    border: solid 5px rgb(244, 212, 207);
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(107, 44, 44, 0.3);
+    margin-left: 15px;
+
+    color: rgb(244, 212, 207);
+    text-shadow: 2px 2px rgba(107, 44, 44, 0.3);
+
+    position: absolute;
+    top: 5%;
+}
+
+/* ==== clock ==== */
+#clock {
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+/* ==== date ==== */
+#date {
+    font-size: 20px;
+    margin-top: 4px;
+    opacity: 0.85;
+
+}
+
+
 
 /* ===========
    LEFT COLUMN
@@ -83,28 +151,7 @@ body {
     max-width: 100%;
 }
 
-/* ==== time box ====*/
-#time-box {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 7px;
-    padding: 5px 24px;
-    text-align: center;
-}
 
-/* ==== clock ==== */
-#clock {
-    letter-spacing: 1px;
-    font-size: 24px;
-}
-
-/* ==== date ==== */
-#date {
-    font-size: 14px;
-    margin-top: 4px;
-    opacity: 0.85;
-
-}
 
 /* ==== lofi-girl photo ==== */
 .left .strawberry{
@@ -136,21 +183,7 @@ body {
 }
 
 /* ===== title ==== */
-.center .title {
-    max-width:90%;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    padding-bottom: 7px;
-    text-align: center;
 
-    color: rgb(107, 44, 44);
-    font-family: 'Crafty Girls', cursive;
-
-    border:solid rgb(107, 44, 44);
-    border-radius: 10px;
-    background-color:rgb(245, 228, 228);
-    box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
-}
 
 /* ==== divider ==== */
 .center .divider::before {
@@ -242,7 +275,6 @@ body {
 .right .news-box #newest-webpage {
     text-align: start;
 }
-
 
 
 

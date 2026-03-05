@@ -78,28 +78,70 @@ shadows: rgba(107, 44, 44, 0.3);
     height: 30vh;
     border: 3px solid rgba(117, 33, 38);
     
+    position: relative;
+    
+    display: grid;
+    justify-content: center;
+}
+
+.banner { 
     text-align: center;
     background-image: url("./images/marvel-banner.jpg");
+    max-width: 100%;
+
+    position: absolute;
 }
 
 .title{
     width: 30%;
     margin: 10px auto;
-    text-align: ceter;
-    display: inline-block;
+    top: 50%;
+    margin-top: -20%;
+    left: 50%;
+    margin-left: -15%;
 
     border: solid 2px rgba(117, 33, 38);
     border-radius: 5px;
     box-shadow: 2px 2px 0 rgba(107, 44, 44, 0.3);
+
+    position: absolute; 
 }
 
+.curve {
+    position: absolute; 
 
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 222, 219);
+    transform: translate(85%, 60%);
+}
+
+.curve ::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    height: 100%;
+    background-color: rgba(107, 44, 44, 0.3);
+    transform: translate(-4%, 40%);
+}
 
 /* ============
    RIGHT COLUMN
    ============ */
 
 .right{
+    margin-top: 350px;
     width: 100%;
     display: grid;
     justify-items: center;
